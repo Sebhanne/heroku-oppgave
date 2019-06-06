@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Registration ></title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./reg.css">
+</head>
+
+<body>
+    <div class="Logo">LOGO</div>
+    <div class="" login-page">
+        <div class="form">
+            <form class="register-form">
+                <!-- <p>LOGIN</p> -->
+                <input type="text" placeholder="Username" />
+
+                <input type="text" placeholder="Email" />
+                <input type="text" placeholder="Password" />
+                <button>LOGIN</button>
+                <p class="message">No existing account? <a href="#">Register</a></p>
+            </form>
+
+            <form class="login-form">
+                <input type="text" placeholder="Name" />
+                <input type="text" placeholder="Surname" />
+                <input type="text" placeholder="Username" />
+                <input type="text" placeholder="Email" />
+                <input type="text" placeholder="Password" />
+                <button>REGISTER</button>
+                <p class="message">Already registered <a href="#">Login</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script>
+        $(".message a").click(function () {
+            $("form").animate({ height: "toggle", opacity: "toggle" }, "slow");
+        });
+    </script>
+
+</body>
+
+</html>
